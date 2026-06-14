@@ -957,10 +957,10 @@ install_udp_custom() {
     arch=$(uname -m)
     local binary_url=""
     if [[ "$arch" == "x86_64" ]]; then
-        binary_url="https://github.com/LukasRK24/FirewallFalcon-Manager/raw/main/udp/udp-custom-linux-amd64"
+        binary_url="https://github.com/gruporiv/-/raw/main/udp/udp-custom-linux-amd64"
         echo -e "${C_BLUE}ℹ️ Detected x86_64 (amd64) architecture.${C_RESET}"
     elif [[ "$arch" == "aarch64" || "$arch" == "arm64" ]]; then
-        binary_url="https://github.com/LukasRK24/FirewallFalcon-Manager/raw/main/udp/udp-custom-linux-arm"
+        binary_url="https://github.com/gruporiv/-/raw/main/udp/udp-custom-linux-arm"
         echo -e "${C_BLUE}ℹ️ Detected ARM64 architecture.${C_RESET}"
     else
         echo -e "\n${C_RED}❌ Unsupported architecture: $arch. Cannot install udp-custom.${C_RESET}"
@@ -1141,7 +1141,7 @@ install_ssl_tunnel() {
         echo -e "\n${C_GREEN}🔐 Generating self-signed SSL certificate...${C_RESET}"
         openssl req -x509 -newkey rsa:2048 -nodes -days 3650 \
             -keyout "$SSL_CERT_FILE" -out "$SSL_CERT_FILE" \
-            -subj "/CN=@FIREWALLFALCON" \
+            -subj "/CN=RIV" \
             >/dev/null 2>&1 || { echo -e "${C_RED}❌ Failed to generate SSL certificate.${C_RESET}"; return; }
         echo -e "${C_GREEN}✅ Certificate created: ${C_YELLOW}$SSL_CERT_FILE${C_RESET}"
     fi
