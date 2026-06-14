@@ -94,8 +94,7 @@ With one script, you can orchestrate multiple VPN and proxy technologies — **s
 
 ## 🌐 Connect with Us
 
-📣 **Telegram Channel:** [t.me/ZeroRxVpn](https://t.me/ZeroRxVpn)
-💻 **GitHub:** [github.com/LukasRK24](https://github.com/LukasRK24)
+💻 **Whatsapp:** [wa.me/528127306789](https://wa.me/528127306789)
 
 ---
 
